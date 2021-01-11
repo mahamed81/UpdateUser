@@ -65,33 +65,6 @@ public class EmployeeController {
 		return "redirect:/listemp";
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	@GetMapping("/delemp")
 	public ModelAndView getDelete(@RequestParam long id) {
 		Employee emp = repo.findById(id).get();
@@ -116,7 +89,5 @@ public class EmployeeController {
 		return new ModelAndView("emps2", "hello", emp);		
 	}
 	
-	
-		
 		
 }
